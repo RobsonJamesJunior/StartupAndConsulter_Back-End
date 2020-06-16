@@ -1,8 +1,12 @@
 import * as functions from 'firebase-functions';
+import * as express from 'express'
+import {rootRouter} from "./Routers/RootRouter"
+import * as admin from "firebase-admin";
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
+admin.initializeApp(functions.config().firebase);
 
-export const helloWorld = functions.https.onRequest((request, response) => {
- response.send("Hello from Firebase!");
-});
+const app = express();
+app.use(express.json());
+app.use(rootRouter);
+
+export const api = functions.https.onRequest(app);

@@ -8,7 +8,7 @@ Services(DAO)  = DAO.
 
 O link raiz da API, não funciona porque deriva.
 
-    https://us-central1-fairday-5a340.cloudfunctions.net/api
+    https://us-central1-startupandconsulter.cloudfunctions.net/api
 
 Padrões de resposta HTTP:
     https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
@@ -16,6 +16,6 @@ Padrões de resposta HTTP:
 Produtos
     Rotas:
         //Retorna uma lista de produtos
-        https://us-central1-fairday-5a340.cloudfunctions.net/api/products/listproducts
+        https://us-central1-startupandconsulter.cloudfunctions.net/api/products/listproducts
         //Insere um produto
-        https://us-central1-fairday-5a340.cloudfunctions.net/api/products/insertproducts
+        https://us-central1-startupandconsulter.cloudfunctions.net/api/products/insertproducts

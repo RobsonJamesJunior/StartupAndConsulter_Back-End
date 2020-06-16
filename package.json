@@ -5,6 +5,9 @@
   "author": "Robson James <james.robson.junior@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "@google-cloud/firestore": "^3.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.12.1",
+    "firebase-functions": "^3.7.0"
   }
 }
